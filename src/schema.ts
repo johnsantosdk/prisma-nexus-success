@@ -11,11 +11,11 @@ const User = objectType({
 })
 
 export const schema = makeSchema({
-  types: [User],
+  types: [ User ],
   plugins: [nexusPrismaPlugin()],
   outputs: {
-    schema: __dirname + '/../schema/graphql',
-    typegen: __dirname + '/../generated/nexus.ts',
+    schema: __dirname + '/../schema.graphql',
+    typegen: __dirname + '/generated/nexus-typegen.ts',
   },
   typegenAutoConfig: {
     contextType: 'Context.Context',
@@ -31,3 +31,4 @@ export const schema = makeSchema({
     ],
   },
 })
+  
