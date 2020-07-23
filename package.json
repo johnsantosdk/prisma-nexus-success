@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.ts",
   "license": "MIT",
+  "scripts": {
+    "start": "ts-node-dev --no-notify --respawn --transpileOnly src/index.ts"
+  },
   "dependencies": {
     "@nexus/schema": "^0.14.0",
     "@prisma/client": "2.2.2",
@@ -18,7 +21,11 @@
     "@types/ws": "7.2.6",
     "ts-node": "8.10.2",
     "ts-node-dev": "1.0.0-pre.50",
-    "typescript": "3.9.6"
+    "typescript": "3.9.6",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "nodemon": "^2.0.3"
   },
   "prettier": {
     "singleQuote": true,
